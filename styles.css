@@ -19,8 +19,7 @@ h3{
   color: #DBEDF3;
   font-family: "Arvo";
   text-shadow: 3px 0 #DA0463;
-  margin-bottom:0 auto 10%;
-  top:220px;
+  top:190px;
   right:30.1%;
 
 }
@@ -35,6 +34,7 @@ footer a:hover{
 }
 
 .container-top{
+  margin-top: 20px;
   padding: 5px;
   position: relative;
 
@@ -76,7 +76,7 @@ background-image: url("images/kick.png");
 }
 
 .set-up {
-  margin: 20% auto 2%;
+  margin: 17% auto 2%;
 }
 .set-down {
   margin: 2% auto 3%;
@@ -119,7 +119,7 @@ background-image: url("images/kick.png");
   }
   .logo{
     position: static;
-    
+
   }
   .container-top{
     padding: 5px;
