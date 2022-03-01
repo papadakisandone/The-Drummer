@@ -3,6 +3,7 @@ for (var i=0;i<document.querySelectorAll(".drum").length;i++){
 
   document.querySelectorAll(".drum")[i].addEventListener("click", function(){
     playSound(this.innerHTML);
+    buttonAnimation(this.innerHTML);
   });
 
 }// for
@@ -10,6 +11,7 @@ for (var i=0;i<document.querySelectorAll(".drum").length;i++){
 // detect when keyboart pressed
 document.addEventListener("keypress", function(event){
   playSound(event.key);
+  buttonAnimation(event.key);
 });
 
 function playSound(key){
@@ -50,3 +52,13 @@ function playSound(key){
   }//switch
 
 }//playSound
+
+// Button animation on press or on click
+function buttonAnimation(currentKey){
+  var activeButton = document.querySelector(`.${currentKey}`);
+  activeButton.classList.add("pressed");
+  setTimeout(function(){
+    activeButton.classList.remove("pressed");
+  },100);
+
+}
